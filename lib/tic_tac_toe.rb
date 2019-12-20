@@ -93,7 +93,11 @@ class TicTacToe
   
   def play 
     turn until over? 
-    
+    if won?
+      puts "Congratulations!"
+    else 
+      puts "It's a draw!"
+  end
   end
   
 end
